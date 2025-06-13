@@ -1,56 +1,56 @@
-// Para poder correr el archivo, en una consola asegurate de estar parada en la carpeta de este archivo
-// y posteriormente corre el comando 'node ./machete.js'
+// To run this file, make sure you're in the directory containing this file
+// and then run the command 'node ./machete.js'
 
-// 'let' es una palabra clave usada para crear una variable, se usa solo la primera vez que se crea una variable, despues simplemente la usas/reasignas
-// 'const' tambien es uan palabra clave para crear una variable, la diferencia es que estas variables no las podes reasignar/modificar
-//      Si no usas ni 'let' ni 'const' para definir tu variable, entonces la misma se considera en el ambito global del archivo, 
-// ahora eso no nos molesta, pero mas adelante veremos la utilidad de usarlos aproppiadamente, por lo que por ahora es mejor 
-// acostumbrarse a usarlos. 
+// 'let' is a keyword used to create a variable. It's only used the first time you create a variable,
+// after that you can simply use/reassign it
+// 'const' is also a keyword to create a variable, but these variables cannot be reassigned/modified
+// If you don't use either 'let' or 'const' to define your variable, it will be considered in the global scope
+// While this isn't an issue now, we'll see the importance of using them appropriately later
 
-// Reasignar un let no hay problema
-let nombre = 'steffif'
-console.log(nombre)
-nombre = 'saanti'
-console.log(nombre)
+// Reassigning a let variable is fine
+let name = 'steffif'
+console.log(name)
+name = 'saanti'
+console.log(name)
 
-// Ademas de reasignar, puedes sumar textos de la siguiente forma
-const stringsUnidos = nombre + " y Steffita"
-console.log("Esto es un string unido con otro: ", stringsUnidos)
+// You can also concatenate strings like this
+const concatenatedStrings = name + " and Steffita"
+console.log("This is a concatenated string: ", concatenatedStrings)
 
-// Reasignar un const te va dar un error (descomentar lineas 13 y 14 para visualizar el error al correr el archivo JS)
+// Reassigning a const will give you an error (uncomment lines 13 and 14 to see the error when running the JS file)
 const age = 26
 console.log(age)
 //age = 35
 //console.log(age)
 
-// Puedes sumar numeros..
-console.log('Numeros sumados: ', age + age)
+// You can add numbers
+console.log('Added numbers: ', age + age)
 
-// Así se ve un boolean
-const soyBoolean = true
-console.log('La variable soyBoolean es: ', soyBoolean)
+// Boolean example
+const isBoolean = true
+console.log('The isBoolean variable is: ', isBoolean)
 
-// Así se ve un number
-const soyNumber = 123
-console.log('La variable soyNumber es: ', soyNumber)
+// Number example
+const isNumber = 123
+console.log('The isNumber variable is: ', isNumber)
 
-// Así se ve un float
-const soyFloat = 123.123
-console.log('La variable soyFloat es: ', soyFloat)
+// Float example
+const isFloat = 123.123
+console.log('The isFloat variable is: ', isFloat)
 
-// Así se ve un array
-const soyArray = ['Hola', 123, false]
-console.log('La variable soyArray es: ', soyArray)
+// Array example
+const isArray = ['Hello', 123, false]
+console.log('The isArray variable is: ', isArray)
 
-// Así se ve un objeto
-const soyObjeto = {
-    name: 'Objeto X',
+// Object example
+const isObject = {
+    name: 'Object X',
     x: 50,
     y: 50
 }
-console.log('La variable soyObjeto es: ', soyObjeto)
+console.log('The isObject variable is: ', isObject)
 
-// Un objeto anidado, con arrays y todo tipo de datos se veria algo asi
+// Nested object example with arrays and different data types
 const user = {
     name: 'santi', 
     age: 26,
@@ -69,7 +69,7 @@ const user = {
     wife: {
         name: "Steffitaa",
         age: 36,
-        occupation: "Por ahora tech writer"
+        occupation: "Currently tech writer"
     },
 }
-console.log('El objeto grande se veria asi', user.friends[0].name)
+console.log('Accessing nested object property: ', user.friends[0].name)

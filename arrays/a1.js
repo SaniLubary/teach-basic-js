@@ -1,4 +1,4 @@
-// modifica la variable 'resultado' para que se le sume el valor de x a modo string, para obtener el valor '0 1 2 3 4'
+// modifica la variable 'resultado' para que se le sume el valor de i a modo string, para obtener el valor '0 1 2 3 4'
 
 let resultado = ''
 let sumarHasta = 5
