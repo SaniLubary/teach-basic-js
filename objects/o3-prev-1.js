@@ -1,3 +1,5 @@
+const readline = require('node:readline');
+
 /**
  * 
 */
@@ -38,5 +40,11 @@ function getTotalExpForUser(userName, experienceGainedLog) {
     return "Error: User not found"
 }
 
-getTotalExpForUser('jose', experienceGainedLog)
-
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+  rl.question(`What's your name?`, name => {
+    getTotalExpForUser(name, experienceGainedLog)
+    rl.close();
+  });
