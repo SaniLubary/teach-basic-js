@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        #player-container {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        #game-container {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="player-container">
+        <p>Add player</p>
+        <input type="text" id="playerName" placeholder="Enter your name">
+        <button id="add-player">Add player</button>
+        <div id="player-list">
+            <h2>Players</h2>
+            <ul id="player-list-ul"></ul>
+        </div>
+    </div>
+    <div id="game-container">
+        <h1>Game</h1>
+        <p>Click on the button to gain points</p>
+        <button id="start-game">+1 point</button>
+        <p>Points: <span id="points">0</span></p>
+    </div>
+    <script>
+        const game = new Game();
+
+        document.getElementById('add-player').addEventListener('click', () => {
+            const playerName = // get the value from the input with id 'playerName'
+            // create a 'addPlayer' method on the Game class so that you can add the player name from the input
+            game.addPlayer(playerName);
+            // update the html so that the player list is shown in the <ul> with id 'player-list-ul'
+        });
+
+        // Create a way to select the user you'll be playing as
+        // Create a funtion to get the event of the button 'start-game' and add 1 point to the points list of that player
+    </script>
+</body>
+</html>
